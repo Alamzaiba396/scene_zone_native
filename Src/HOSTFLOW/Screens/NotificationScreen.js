@@ -5,7 +5,7 @@ import {
   StyleSheet,
   ScrollView,
   Image,
-  TouchableOpacity,   
+  TouchableOpacity,
   SafeAreaView,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
@@ -15,7 +15,7 @@ const NotificationScreen = () => {
     <SafeAreaView style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
           <Icon name="arrow-left" size={22} color="#fff" />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Notification</Text>
@@ -26,7 +26,7 @@ const NotificationScreen = () => {
         <View style={styles.notificationCard}>
           <View style={styles.row}>
             <Image
-              source={require('../assets/Images/swiper.png')} 
+              source={require('../assets/Images/swiper.png')} // ✅ replace with your actual image
               style={styles.image}
             />
             <View style={styles.info}>

@@ -6,7 +6,6 @@ import { View, Text } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import EventScreen from '../Screens/EventScreen';
 import ShortlistScreen from '../Screens/ShortListScreen';
-import ProfileScreen from '../Screens/ProfileScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -40,7 +39,7 @@ const BottomTabNavigator = () => {
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Event" component={EventScreen} />
       <Tab.Screen name="Shortlists" component={ShortlistScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen name="Profile" component={DummyScreen} />
     </Tab.Navigator>
   );
 };

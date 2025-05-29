@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import {
   View,
@@ -50,9 +48,9 @@ const OnboardingScreen = ({ navigation }) => {
     if (type === 'continue as host') {
       navigation.navigate('Signup');
     } else if (type === 'continue as artist') {
-      navigation.navigate('Artist');
+      navigation.navigate('ArtistSignup');
     } else if (type === 'discover events') {
-      navigation.navigate('Discover');
+      navigation.navigate('UserSignup');
     }
   };
 
